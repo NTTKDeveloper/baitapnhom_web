@@ -1,0 +1,140 @@
+
+/* Button */
+/* Thay đổi kiểu nút khi màn hình nhỏ */
+@media (max-width: 991px) {
+    .btn-search{
+        background-color: transparent; /*Màu trắng trùng màu với nền*/
+        border: none; /*Mất viền*/
+        height: 80%; 
+        width: 60px; 
+        top: 4px; 
+        right: 4px; 
+        border-radius: 5px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+    /* Ẩn phần tử khi màn hình thu nhỏ */
+    .hide-small-screen{
+        display: none;
+    }
+}  
+
+/* Thay đổi kiểu nút khi màn hình lớn */
+@media (min-width: 992px) {
+    .btn-search{
+        height: 80%; 
+        width: 60px; 
+        top: 4px; 
+        right: 4px; 
+        border-radius: 5px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+.btn-header {
+    border-radius: 0px;
+}
+/* ------------------------------------------------------------------------------ */
+/* Dropdown */
+.dropdown-menu {
+    min-width: 300px; /* Đặt chiều rộng tối thiểu cho menu thả xuống */
+    padding: 20px; /* Tăng padding để làm cho menu thả xuống lớn hơn */
+}
+
+/* Hiển thị các dropdown sub-menu khi di chuột vào */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+/* Đảm bảo dropdown hiển thị ngay bên dưới phần tử kích hoạt */
+.dropdown-menu-cart {
+    top: 100%;
+    right: 0;
+    margin-top: 0; /* Xóa khoảng cách nếu có */
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+/* Tùy chỉnh vị trí cho menu cấp con */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+/* Ẩn mũi tên cho dropdown */
+.no-caret::after {
+    display: none;
+}
+
+/* List-menu */
+    /* Tăng kích thước của thẻ <li> */
+    li {
+        font-size: 1.5rem; /* Điều chỉnh kích thước font (to hơn) */
+        padding: 20px; /* Tăng khoảng cách bên trong thẻ */
+        margin: 0; /* Đảm bảo không có khoảng cách bên ngoài */
+        /* background-color: gray; Tô màu nền để nhìn rõ */
+        text-align: left; /* Canh giữa nội dung trong thẻ li */
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        width: 400x; /* Đặt chiều rộng của thẻ <li> tràn đầy khung nhìn */
+        height: 60px;
+    }
+
+/* ------------------------------------------------------------------------------- */
+/* Image */
+/* Khung chứa hình ảnh */
+.image-container {
+    width: 100%; /* Chiều rộng cố định */
+    height: 500px; /* Chiều cao cố định */
+    overflow: hidden; /* Ẩn phần hình ảnh vượt quá khung */
+}
+
+/* Hình ảnh bên trong khung */
+.image-container img {
+    width: 100%;  /* Đảm bảo chiều rộng ảnh bằng với khung */
+    height: 100%; /* Đảm bảo chiều cao ảnh bằng với khung */
+    object-fit: cover; /* Cắt ảnh để lấp đầy khung */
+    object-position: center; /* Đảm bảo phần trung tâm của ảnh được hiển thị */
+}
+
+/* ------------------------------------------------------------------------------- */
+/* EveryThing */
+/* Không khoảng cách giữa các cột */
+.no-gap .col {
+    padding: 0;
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase; /* Viết hoa tất cả chữ */
+}
+
+.logo{
+    /* max-width: 125px; 
+    max-height: 600px; */
+    max-width: 100%; /* Để logo không vượt quá chiều rộng của phần chứa */
+    height: auto; /* Giữ tỷ lệ cho logo */
+}
+
+.justify-content-center {
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+
+.search-bar {
+    margin-top: 10px; /* Khoảng cách khi nó nhảy xuống */
+}
