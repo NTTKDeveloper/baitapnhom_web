@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Giới thiệu</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="./img/4212474.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Load icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!-- Logo -->
+                    <div class="col-6 col-lg-2 d-flex align-items-center order-1 order-lg-1">
+                        <a href="#" class="d-flex align-items-center link-dark text-decoration-none">
+                            <img class="logo" src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <!-- Thanh tìm kiếm -->
+                    <div class="col-12 col-lg-5 search-bar order-4 order-lg-2">
+                        <form class="w-100 position-relative" action="#">
+                            <input type="search" class="form-control" placeholder="Tìm kiếm sản phẩm .........." aria-label="Search" maxlength="40" style="padding-right: 60px;">
+                            <button class="btn btn-warning btn-search position-absolute" type="submit">
+                                <i class="fa fa-search" style="font-size: 16px;"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- User Profile -->    
+                    <div class="col-3 col-lg-3 d-flex justify-content-end order-2 order-lg-3">
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="me-2"> <!-- Cách ly icon và văn bản -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                                    </svg>
+                                </div>
+                                <div class="hide-small-screen">
+                                    <span>Đăng nhập / Đăng kí</span><br>
+                                    <span class="small text-muted">Tài khoản của tôi</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu p-4 text-small shadow" aria-labelledby="dropdownUser2">
+                                <h5 class="uppercase text-center">Đăng nhập tài khoản</h5>
+                                <form action="#" method="POST">
+                                    <!-- Input Email -->
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn" required>
+                                    </div>
+                                    <!-- Input Password -->
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Mật khẩu</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" required>
+                                    </div>
+                                    <!-- Login button -->
+                                    <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+                                </form>
+
+                                <!-- Sign-up Link -->
+                                <div class="mt-3 text-center">
+                                    <a href="#">Chưa có tài khoản? Đăng ký ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Shopping Cart-->
+                    <div class="col-3 col-lg-2 d-flex justify-content-end order-2 order-lg-3">
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="me-2"> <!-- Cách ly icon và văn bản -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                                    </svg>
+                                </div>
+                                <div class="hide-small-screen">
+                                    <span>Giỏ hàng</span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu p-4 text-small shadow" aria-labelledby="dropdownUser2">
+                                <h5 class="uppercase text-center">Giỏ hàng của bạn</h5>
+                                <!-- Chuyễn đến trang giỏ hàng và chuẩn bị thanh toán -->
+                                <div class="mt-3 text-center">
+                                    <a href="#">Thanh toán</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-1">
+                <div class="btn-group w-100">
+                    <button class="btn btn-primary w-100 btn-header">Trang chủ</button>
+                    <button class="btn btn-primary w-100 btn-header">Sản phẩm</button>
+                    <button class="btn btn-primary w-100 btn-header">Giới thiệu</button>
+                    <button class="btn btn-primary w-100 btn-header">Liên hệ</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            
+            <div class="text-center">
+                <h1 class="text-uppercase p-5">Giới thiệu</h1>
+                <p class="bg-info p-3"><a href="" class="text-decoration-none text-dark">Trang chủ</a> / Giới thiệu</p><br>
+            </div>
+            <div class="container mb-5">
+                <h3 class="text-center">Về Bookstore</h3>
+                <p>
+                    Bookstore được thành lập vào tháng 5/11/2024, là tiệm sách điện tử online với mong muốn đọc giả Việt Nam được sự tiện lợi trong việc tiếp cận với nguồn tri thức khổng lồ quý giá của nước nhà và của thế giới.
+                </p>
+                <p>
+                    Bookstore hứa hẹn mang dến cho người đọc những trải nghiệm mới về các đầu sách lý tưởng với một mức chi phí cực kì phù hợp. Bookstore vẫn đang trên đà phát triển cho nên chúng tôi rất mong nhận được những sự phản hồi tích cực từ đọc giả
+                </p>
+                <hr>
+                <ol>
+                    <h4 class="text-center">Những lý do bạn nên chọn cửa hàng sach điện tử Bookstore</h4>
+                    <li>
+                        <h6>Kho Sách Đa Dạng và Phong Phú</h6>
+                        <p>
+                            Chúng tôi cung cấp rất nhiệu tựa sách từ nhiều thể loại. Bạn sẽ dễ dàng tìm thấy cuốn sách phù hợp với sở thích và nhu cầu cá nhân của mình.
+                        </p>
+                    </li>
+                    <li>
+                        <h6>Tiện Lợi, Truy Cập Mọi Lúc Mọi Nơi</h6>
+                        <p>
+                            Với phiên bản sách điện tử, bạn có thể đọc sách mọi lúc mọi nơi mà không cần lo lắng về việc mang theo sách giấy. Chỉ cần một thiết bị có kết nối internet, bạn sẽ có ngay thư viện sách trong tầm tay.
+                        </p>
+                    </li>
+                    <li>
+                        <h6>Giao Diện Thân Thiện và Dễ Sử Dụng</h6>
+                        <p>
+                            Trang web của chúng tôi được thiết kế với giao diện dễ nhìn, thân thiện với người dùng và dễ điều hướng. Bạn có thể nhanh chóng tìm kiếm, chọn lọc và đọc sách một cách mượt mà, cho dù bạn là người dùng mới.
+                        </p>
+                    </li>
+                    <li>
+                        <h6>Giá Cả Hợp Lý và Nhiều Khuyến Mãi Hấp Dẫn</h6>
+                        <p>
+                            Chúng tôi cam kết mang đến mức giá cạnh tranh cho các tựa sách, kèm theo các chương trình khuyến mãi thường xuyên, giúp bạn tiết kiệm tối đa mà vẫn có cơ hội tiếp cận với các đầu sách chất lượng.
+                        </p>
+                    </li>
+                    <li>
+                        <h6>Hỗ Trợ Khách Hàng Tận Tâm</h6>
+                        <p>
+                            Đội ngũ chăm sóc khách hàng luôn sẵn sàng hỗ trợ, giải đáp thắc mắc và cung cấp thông tin cho bạn 24/7. Chúng tôi cam kết mang đến trải nghiệm mua sắm thoải mái và hài lòng nhất.
+                        </p>
+                    </li>
+                    <li>
+                        <h6>Tiết Kiệm Thời Gian và Bảo Vệ Môi Trường</h6>
+                        <p>
+                            Mua sách điện tử không chỉ giúp bạn tiết kiệm thời gian mà còn góp phần bảo vệ môi trường khi hạn chế việc in ấn sách giấy. Đây là lựa chọn lý tưởng cho những ai yêu sách và muốn sống xanh.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+  
+        </main>
+    </body>
+</html>
